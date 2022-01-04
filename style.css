@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: #fff url('Cube-1s-200px.gif') center;
+    background-repeat: no-repeat;
+}
+html{
+    font-family: 'Montserrat';
+    font-size:10px;
+    scroll-behavior: smooth;
+}
+.gotop{
+    position:fixed;
+    width:50px;
+    height:50px;
+    background:red;       
+    bottom:40px;
+    right:50px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    font-size:26px;
+}
+.alumnus .welcome{
+    text-transform: uppercase;
+    margin-left:40px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+.textref {
+    color:crimson;
+}   
+.main{
+    height:150px;
+    background-color: #FEC559;
+    width: 100%;
+}
+.alumnus{
+    position: absolute;
+    left: 250px;
+}
+.navbar{
+    position: relative;
+    top:30px;
+}
+.active{
+    color: white;
+}
+.pic{
+    border-bottom:25px solid #FEC559;
+    border-left:25px solid #FEC559;
+    border-right:25px solid #FEC559;
+    border-top:8px solid #FEC559;
+    z-index: -1;
+}
+.move{
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color:crimson;
+    z-index: 1;
+}
+.move .mark{
+    color: crimson;
+}
+.photo{
+    position: relative;
+}
+.carousel .item {
+    height:900px;
+  } 
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 900px;
+  }
+  .rights{
+    position: relative;
+    top:40px;
+    text-align: center;
+    height: 50px;
+}
+.yes{
+    position: relative;
+    bottom: 20px;
+    width:100%;
+    height:500px;
+    background-color: #FEC559;
+}
+.promo{
+    float: left;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.textrefs{
+    margin-left: 40px;
+    margin-top: 70px;
+    float: left;
+    width:40%;
+}
+.navbar{
+    height:40px;
+}
+.nav .heyy{
+position: relative;
+left:230px ;
+}
+.nav .heyys{
+    position: relative;
+    left:230px;
+    bottom:5px;
+}
+.textrefs span{
+    color:crimson;
+}   
+/*Service Section*/
+.service-head{
+    position: relative;
+    bottom: 20px;
+    border-top: 5px solid black;
+    background-color: #FEC559;
+}
+.services{
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 10rem 5rem;
+}
+.services .services-header{
+    width: 100%;
+    text-align: center;
+}
+.services .services-header .services-header-heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+.services .services-header .services-header-desc{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+.services .services-info{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.services .services-info .service{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    transition: .3s ease transform;
+    margin: 5px;
+}
+.services .services-info .service .service-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style:preserve-3d;
+    transition: .3s ease transform;
+    display: block;
+}
+.services .services-info .service .service-card .service-front,
+.services .services-info .service .service-card .service-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.13);
+    padding: 10px;
+}
+.services .services-info .service .service-card .service-back{
+    transform: rotateY(180deg);
+}
+ .services .services-info .service .service-card .service-front i{
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.services .services-info .service .service-card .service-front .service-front-heading,
+    .services .services-info .service .service-card .service-back .service-back-heading{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.services .services-info .service:hover .service-card{
+    transform: rotateY(180deg);
+} 
+.services .services-info .service .service-card .service-back .service-back-desc{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front{
+    background-image: url(5.png);
+    background-size: cover;
+    position: relative;
+    color:green;
+}
+.services .services-info .service:nth-child(3) .service-card .service-front{
+    background-image: url(6.png);
+    background-size: cover;
+    position: relative;
+    color:green;
+}
+.services .services-info .service:nth-child(1) .service-card .service-front{
+    background-image: url(7.png);
+    background-size: cover;
+    position: relative;
+    color:green;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front::after{
+content:'';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0,0,0,0.274);
+z-index: -1;
+}
+.services .services-info .service:nth-child(2) .service-card .service-front i{
+    color: white;
+} 
+/*Service Section*/
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white
+    border: 2px solid crimson;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color:black;
+    text-align: center;
+    border-radius:4px;
+    position: relative;
+    bottom: 20px;
+    font-size:20px;
+    height: 80px;
+    border:4px solid white;
+}
+.cta:hover{
+    background-color: crimson;
+    color: white;
+    border:4px solid yellow;
+}
+.heads{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: crimson;
+    border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    bottom:20px;
+    height:100px;
+    border-radius: 40px;
+    font-size: 50px;
+}
+.cta>a{
+    color: white;
+    text-decoration: none;
+}
+.headss{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: crimson;
+    border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    bottom:20px;
+    height:100px;
+    border-radius:40px;
+    font-size: 50px;
+}
+@media only screen and (min-width:900px) and (max-width:1024px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .alumnus{
+        max-width: 100%;
+    }
+    .photo{
+        width: 100%;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+        .welcome{
+            position: relative;
+            right:260px;
+        }
+        .promo iframe{
+            position: relative;
+            width: 500px;
+            right: 60px;
+        }
+        .textrefs{
+            position: relative;
+            bottom:400px;
+            left:530px;
+            float: left;
+            width:35%;
+        }
+        .services-header{
+            position: relative;
+            right: 120px;
+        }
+}
+@media only screen and (min-width:1024px) and (max-width:1124px){
+.welcome{
+    position: relative;
+    right:200px;
+}
+.nav .heyy,.nav .heyys{
+    display: none;
+}
+.promo iframe{
+    position: relative;
+    width: 450px;
+    right:80px;
+}
+.textrefs{
+    position: relative;
+    right: 80px;
+    bottom: 0px;
+    float: left;
+    width:40%;
+}
+}
+@media only screen and (min-width:1124px) and (max-width:1366px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .welcome{
+        position: relative;
+        right:180px;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+    .promo iframe{
+        position: relative;
+        width: 500px;
+        right:60px;
+    }
+    .textrefs{
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        float: left;
+        width:40%;
+    }
+}
+@media only screen and (min-width:1366px) and (max-width:1440px){
+    .welcome{
+        position: relative;
+        right: 140px;
+    }
+}
+@media only screen and (min-width:1440px) and (max-width:1640px){
+    .welcome{
+        position: relative;
+        right: 80px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:770px){
+    .welcome{
+        position: relative;
+        right: 170px;
+        font-size:8px;
+        height: 800px;
+    }
+    .promo iframe{
+        position: relative;
+        width: 400px;
+        right:60px;
+    }
+    .textrefs{
+        display: none;
+    }
+    .navbar{
+       max-width: 100%;
+       position: relative;
+       top:100px;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+    .photo{
+        position: relative;
+        top:190px;
+        height: 1100px;
+        width: 100%;
+    }   
+}
+@media only screen and (min-width:770px) and (max-width:1024px){
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+    .main{
+        height: 155px;
+    }
+    .welcome{
+        position: relative;
+        right: 170px;
+        font-size:8px;
+    }
+    .alumnus{
+        width: 40%;
+    }
+    .navbar{
+        max-width: 100%;
+        position: relative;
+        top:40px;
+     }
+     .promo iframe{
+        position: relative;
+        width: 600px;
+        right:60px;
+    }
+    .photo{
+        position: relative;
+        height: 920px;
+        width: 100%;
+    }   
+    .yes{
+        position: relative;
+        height: 500px;
+    }
+    .textrefs{
+        display: none;
+    }
+    .service-head .services-header-heading{
+        position: relative;
+        left: 100px;
+        text-align: center;
+    }
+}

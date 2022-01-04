@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: #fff url('Cube-1s-200px.gif') center;
+    background-repeat: no-repeat;
+}
+html{
+    font-family: 'Montserrat';
+    font-size:10px;
+    scroll-behavior: smooth;
+}
+.alumnus .welcome{
+    text-transform: uppercase;
+    margin-left:40px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+.textref {
+    color:crimson;
+}   
+.main{
+    height: 180px;
+    background-color: #FEC559;
+    width: 100%;
+}
+.alumnus{
+    position: absolute;
+    width: 700px;
+    left: 250px;
+}
+.navbar{
+    position: relative;
+    top:20px;
+}
+.active{
+    color: white;
+}
+.navbar{
+    height:10px;
+}
+.nav .heyy{
+position: relative;
+left:300px;
+}
+.nav .heyys{
+    position: relative;
+    left:300px;
+    bottom:5px;
+}
+.move{
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color:crimson;
+    z-index: 1;
+}
+.move .mark{
+    color: crimson;
+}
+.shlokas{
+    height: 600px;
+    border-top: 2px solid black;
+    background-color: #FEC559;
+}
+.opac{
+    opacity:0.8;
+    border: 20px solid white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.opac:hover{
+    opacity: 1;
+    border: 0;
+    height:500px;
+    width: 600px;
+    z-index: 1;
+}
+.opacs{
+    opacity:0.8;
+    border: 20px solid white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.opacs:hover{
+    opacity: 1;
+    border: 0;
+    position: relative;
+    right: 400px;
+    height:500px;
+    width: 800px;
+    z-index: 1;
+}
+.images:hover .cta{
+    display: ;
+}
+.cta{
+    position:relative;
+    left:320px;
+    z-index: 1;
+}
+.dash:hover a .cta{
+    display: none;
+}
+.daily_wishes{
+    position: relative;
+    bottom: 0px;
+    height: 600px;
+    border-top: 2px solid black;
+    background-color: #FEC559;
+}
+ul.images {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #FEC559;
+    cursor: pointer;
+  }
+  ul.images::-webkit-scrollbar{
+      width: 0;
+  }
+  ul.images li {
+    display: inline;
+    width: 150px;
+    height: 150px;
+  }
+  .festival_wishes{
+    position: relative;
+    bottom: 0px;
+    height: 600px;
+    border-top: 2px solid black;
+    background-color: #FEC559;
+}
+.rights{
+    position: relative;
+    top:40px;
+    text-align: center;
+    height: 50px;
+}
+.birthday_wishes{
+    position: relative;
+    bottom: 0px;
+    height: 600px;
+    border-top: 2px solid black;
+    background-color: #FEC559;
+}
+@media only screen and (min-width:900px) and (max-width:1024px){
+    .navbar-brand{
+        display: none;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+    .welcome{
+        position: relative;
+        right:260px;
+    }
+    .main{
+        height:250px;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1124px){
+    .welcome{
+        position: relative;
+        right:200px;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+        .alumnus{
+        width:40%;
+    }
+    .main{
+        height: 250px;
+    }
+}
+@media only screen and (min-width:1124px) and (max-width:1366px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .welcome{
+        position: relative;
+        right:180px;
+    }
+    .nav .heyy,.nav .heyys{
+        display: none;
+    }
+}
+@media only screen and (min-width:1366px) and (max-width:1440px){
+    .welcome{
+        position: relative;
+        right: 140px;
+    }
+}
+@media only screen and (min-width:1440px) and (max-width:1640px){
+    .welcome{
+        position: relative;
+        right: 80px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:560px){
+    .welcome{
+        position: relative;
+        right: 170px;
+        font-size:8px;
+        height: 800px;
+    }
+    .alumnus{
+        width: 40%;
+    }
+    .main{
+        height: 80px;
+    }
+    .navbar{
+        max-width: 100%;
+        position: relative;
+     }
+     .navbar-brand{
+         display: none;
+     }
+     .nav .heyy,.nav .heyys{
+         display: none;
+     }
+     .shlokas{
+         position: relative;
+         top:200px;
+     }
+    }
+    @media only screen and (min-width:560px) and (max-width:900px){
+        .welcome{
+        position: relative;
+        right: 170px;
+        font-size:8px;
+        height: 800px;
+    }
+    .alumnus{
+        width: 40%;
+    }
+    .main{
+        height: 220px;
+    }
+    .navbar{
+        max-width: 100%;
+        position: relative;
+        top:100px;
+     }
+     .navbar-brand{
+         display: none;
+     }
+     .nav .heyy,.nav .heyys{
+         display: none;
+     }
+     .shlokas{
+         position: relative;
+     }
+        
+    }
